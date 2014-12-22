@@ -1,4 +1,4 @@
-node 'htserver1.example.com' {
+node 'htserver1.example.com', 'server2.example.com' {
 	file { '/tmp/hello':
 	content => "Hello, World\n",
 	}
@@ -6,6 +6,6 @@ node 'htserver1.example.com' {
 		ensure => "running",
 		}
         file { '/tmp/hello1':
-	content =. "Test puppet\n",
+	content => "Test puppet\n",
 	}
 }
