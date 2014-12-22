@@ -5,4 +5,7 @@ node 'htserver1.example.com' {
         service { "sshd":
 		ensure => "running",
 		}
+        file { '/tmp/hello1':
+	content =. "Test puppet\n",
+	}
 }
