@@ -1,3 +1,3 @@
-node 'server2.example.com' {
+node 'Test-Node' {
 	include puppet
 }
